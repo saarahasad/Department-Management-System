@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette|Russo+One" rel="stylesheet">
+<script type="text/javascript" src="vendor/jquery-1.11.3.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="vendor/login/css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script  src="vendor/login/js/index.js"></script>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    
+}
+  @media(max-width:700px){
+    body {
+    font-size:20px!important;
+    
+}
+  }
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('image/faculty-bg.jpg');
+    min-height: 100%;
+    height: 70px;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("image/internal-bg.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("image/login-bg.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+      
+      
+           @import url("https://fonts.googleapis.com/css?family=Saira+Semi+Condensed");
+body {
+  font-family: "Saira Semi Condensed", sans-serif;
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.first-container, .second-container {
+  cursor: pointer;
+  position: relative;
+}
+.first-container h1, .second-container h1 {
+  position: relative;
+  letter-spacing: 0px;
+  font-size: 4vw;
+}
+
+.first-container {
+  margin-bottom: 15px;
+}
+
+span {
+  
+  position: relative;
+  margin-right: 5px;
+}
+span:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+  z-index: -5;
+}
+
+.share:hover > h1 > span:nth-child(1):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 100ms;
+  transform: rotate(-25deg);
+}
+
+.share:hover > h1 > span:nth-child(1) {
+  color: #39393B;
+  transition-delay: 110ms;
+}
+
+.share:hover > h1 > span:nth-child(2):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 120ms;
+  transform: rotate(-20deg);
+}
+
+.share:hover > h1 > span:nth-child(2) {
+  color: #39393B;
+  transition-delay: 200ms;
+}
+
+.share:hover > h1 > span:nth-child(3):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 300ms;
+  transform: rotate(-15deg);
+}
+
+.share:hover > h1 > span:nth-child(3) {
+  color: #39393B;
+  transition-delay: 330ms;
+}
+
+.share:hover > h1 > span:nth-child(4):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 400ms;
+  transform: rotate(-10deg);
+}
+
+.share:hover > h1 > span:nth-child(4) {
+  color: #39393B;
+  transition-delay: 440ms;
+}
+
+.share:hover > h1 > span:nth-child(5):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 450ms;
+  transform: rotate(-5deg);
+}
+
+.share:hover > h1 > span:nth-child(5) {
+  color: #39393B;
+  transition-delay: 500ms;
+}
+
+.share:hover > h1 > span:nth-child(6):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 600ms;
+  transform: rotate(0deg);
+}
+
+.share:hover > h1 > span:nth-child(6) {
+  color: #39393B;
+  transition-delay: 660ms;
+}
+
+.share:hover > h1 > span:nth-child(7):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 700ms;
+  transform: rotate(5deg);
+}
+
+.share:hover > h1 > span:nth-child(7) {
+  color: #39393B;
+  transition-delay: 770ms;
+}
+
+.share:hover > h1 > span:nth-child(8):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 800ms;
+  transform: rotate(10deg);
+}
+
+.share:hover > h1 > span:nth-child(8) {
+  color: #39393B;
+  transition-delay: 880ms;
+}
+
+.share:hover > h1 > span:nth-child(9):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 900ms;
+  transform: rotate(15deg);
+}
+
+.share:hover > h1 > span:nth-child(9) {
+  color: #39393B;
+  transition-delay: 990ms;
+}
+
+.share:hover > h1 > span:nth-child(10):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 1000ms;
+  transform: rotate(20deg);
+}
+
+.share:hover > h1 > span:nth-child(10) {
+  color: #39393B;
+  transition-delay: 1100ms;
+}
+*.share:hover > h1 > span:nth-child(11):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 1200ms;
+  transform: rotate(20deg);
+}
+
+.share:hover > h1 > span:nth-child(11) {
+  color: #39393B;
+  transition-delay: 1300ms;
+}
+.share:hover > h1 > span:nth-child(12):after {
+  background: white;
+  width: 100%;
+  transition: 0.6s;
+  transition-delay: 1400ms;
+  transform: rotate(20deg);
+}
+
+.share:hover > h1 > span:nth-child(12) {
+  color: #39393B;
+  transition-delay: 1500ms;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5rem;
+}
+
+.heading {
+  color: #eee;
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: black;
+}
+.text-container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color:#B3B6B7;
+  font-family: 'Cutive Mono', monospace;
+  letter-spacing: 4px;
+  font-size: 50px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+}
+
+.reg-text {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: opacity 5s ease, -webkit-transform 3.33333s ease-out;
+  transition: opacity 5s ease, -webkit-transform 3.33333s ease-out;
+  transition: transform 3.33333s ease-out, opacity 5s ease;
+  transition: transform 3.33333s ease-out, opacity 5s ease, -webkit-transform 3.33333s ease-out;
+}
+.reg-text.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.letter {
+  -webkit-transition: opacity 5s ease, -webkit-transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), -webkit-filter 5s ease;
+  transition: opacity 5s ease, -webkit-transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), -webkit-filter 5s ease;
+  transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease, opacity 5s ease;
+  transition: transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), filter 5s ease, opacity 5s ease, -webkit-transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), -webkit-filter 5s ease;
+  opacity: 0;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+.letter:nth-of-type(2) {
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+  -webkit-transition-duration: 2.5s;
+          transition-duration: 2.5s;
+}
+.letter:nth-of-type(3) {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateY(-170px);
+          transform: translateY(-170px);
+  -webkit-transition-duration: 3.84615s;
+          transition-duration: 3.84615s;
+}
+.letter:nth-of-type(4) {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  -webkit-transition-duration: 3.33333s;
+          transition-duration: 3.33333s;
+}
+.letter:nth-of-type(5) {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-transition-duration: 2.5s;
+          transition-duration: 2.5s;
+}
+.letter:nth-of-type(6) {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
+  -webkit-transition-duration: 2.17391s;
+          transition-duration: 2.17391s;
+}
+.letter:nth-of-type(7) {
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px);
+  -webkit-transition-duration: 2.5s;
+          transition-duration: 2.5s;
+}
+.letter:nth-of-type(8) {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateY(-170px);
+          transform: translateY(-170px);
+  -webkit-transition-duration: 3.84615s;
+          transition-duration: 3.84615s;
+}
+.letter:nth-of-type(9) {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
+  -webkit-transition-duration: 3.33333s;
+          transition-duration: 3.33333s;
+}
+.letter:nth-of-type(10) {
+  -webkit-transform: translateY(-150px);
+          transform: translateY(-150px);
+  -webkit-transition-duration: 2.5s;
+          transition-duration: 2.5s;
+}
+.letter:nth-of-type(11) {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
+  -webkit-transition-duration: 2.17391s;
+          transition-duration: 2.17391s;
+}
+.letter.loaded {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+
+       }
+
+         body{
+                    background-image: url("image/admin-bg.jpeg");
+                    background-size: cover;
+                    background-repeat:no;
+            }
+            .navbar{
+                background-color: black;
+                color:white;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .navbar-default .navbar-nav>li>a {
+                color: white!important;
+            }
+            .dropdown-menu>li>a {
+                 background-color: #3b3b3d;
+                color:white;
+            }
+            .navbar-nav>li>.dropdown-menu
+            {
+                padding: 0px;
+            }
+
+        	.footer {
+                bottom: 0;
+                width: 100%;
+                height: 50px;
+                background-color:black;
+                text-align: center;
+                padding: 10px;
+                color: white;
+                }
+            @media(min-width:800px){
+            .nav{
+                margin-left: 90px;
+            }
+            }
+            
+</style>
+<body>
+
+        <link rel="stylesheet" href="navbarstyle.css">
+         <nav style="font-weight:bold; opacity:0.9;" class="navbar navbar-default navbar-fixed-top">
+          
+
+           <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a  style="margin-left:-58px;color:white; font-weight:700; font-size:25px;"class="navbar-brand" href="home.html">DMS</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <div id="cssmenu">
+                    <ul class="nav navbar-nav">
+                    <li  class="active"  ><a  href="home.html">HOME</a></li>
+                    <li ><a  href="studentlogin.php">STUDENT </a></li>
+                       <li ><a  href="facultylogin.php">FACULTY </a></li>
+                    <li><a  href="admin.php">ADMIN </a>
+                    
+                    
+                    </li>
+                    <li><a href="syllabus.php">SYLLABUS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                      </div>
+
+        
+                </div><!-- /.navbar-collapse -->
+            </div>
+          
+
+        </nav>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <!--<div class="w3-display-middle" style="white-space:nowrap;">
+     <span class="w3-xxlarge w3-text-white w3-wide w3-center" style="margin-right: 180px; margin-bottom: 60px;"></span>
+    <div class="caption" style="background-color: black; align-items: center;">
+    <span class="border" style="margin-right: 200px;">E-ATTENDANCE</span>
+  </div>--<div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+    <!-- <span class="w3-xxlarge w3-text-white w3-wide" style="margin-right: 130px; margin-bottom: 60px;"></span>
+<div class="caption">-->
+   <!-- <span class="border" style="background-color:transparent;font-size:40px;color: #f7f7f7; text-align: center;">SCROLL UP</span>-->
+   
+
+  </div>
+
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" style="height: 400px; font-size: 20px; color: black;width: 100%;background-color: #CCCCCC;margin-top: -20px;">
+<!-- <h1 style="text-align: center;font-family: 'Russo One', sans-serif;">OBJECTIVE</h1>-->
+<div class="text-container">
+    <span class="reg-text">E - </span>
+    <span class="letter">A</span><span class="letter">T</span><span class="letter">T</span><span class="letter">E</span><span  class="letter">N</span><span class="letter">D</span><span class="letter">A</span><span class="letter">N</span><span class="letter">C</span><span class="letter">E</span>
+</div>
+<div class="w3-container w3-center w3-animate-top" style="margin-top: -20px;">
+ <p style="margin-top: 20px;font-family: 'Russo One', sans-serif;
+font-family: 'Courgette', cursive;font-size: 23px;">The primary objective of e-Attendance program is to enter time and data of students attending classes,because it makes taking attendance simplier for the faculty members.</p>
+  
+  
+</div>
+
+  
+  <div class="w3-container w3-center ">
+  <h1 style="font-family: 'Russo One', sans-serif;">THE ONLINE ATTENDANCE SHEET</h1>
+  
+</div>
+<div class="w3-container w3-center">
+   <p style="margin-top: 30px;font-family: 'Russo One', sans-serif;
+font-family: 'Courgette', cursive;font-size: 23px;  ">Say goodbye the paper-based time sheets! Due to the e-Attendance you can finally forget about the paper-based time sheets and the problems involved in it. The program is available from any part of the world, so it is possible to save time and effort with avoiding collecting paper-based time-sheets and entering their data. It is a common surface, but students have unique USNs and they can record their attendances and the claims of leave.</p
+</div>
+
+
+ 
+
+<!--  <h3 class="w3-center">ABOUT ME</h3>
+
+
+  <p class="w3-center"><em>I love photography</em></p>
+  <!--<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="w3-row">-->
+   <!-- <div class="w3-col m6 w3-center w3-padding-large">
+      <!--<p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
+      <img src="image/coachella.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>-->
+
+    <!-- Hide this text on small devices -->
+    <!--<div class="w3-col m6 w3-hide-small w3-padding-large">
+      <!--<p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>-->
+  </div>
+</div>
+
+<!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>-->
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="home" >
+    <!-- <span class="w3-xxlarge w3-text-white w3-wide" style="margin-right: 200px; margin-bottom: 150px;"></span>
+    <div class="caption">-->
+
+<!--    <span class="border" style="background-color:transparent;font-size:40px;color: black;">INTERNAL  MARKS</span>-->
+<div class="main-container">
+  <h3 class="heading" data-target-resolver></h3>
+</div>
+  </div>
+
+  </div>
+    
+  </div>
+</div>
+<!-- Container (Portfolio Section) -->
+<div id="about" style="height: 400px; font-size: 20px; color: black;width: 100%;background-color:#CCCCCC;margin-top: 0px;">
+
+<div class="w3-container w3-center ">
+  <h1 style="font-family: 'Russo One', sans-serif;font-size: 35px;">OBJECTIVE</h1>
+  
+</div>
+<div class="w3-container w3-center w3-animate-zoom">
+ <p style="font-family: 'Russo One', sans-serif;
+font-family: 'Courgette', cursive;font-size: 23px;margin-top: 40px;">Department Management System deals with all kind of student and faculty details, academic related
+reports, course details, curriculum, batch details and other resource related details too. It tracks all
+the details of a student from the day one to the end of his course like tracking of attendance,
+progress in the course, curriculum details, exam details, project or any other assignment details,
+internal assessment results etc.</p> 
+ 
+</div>
+  
+<!--<div  id="portfolio" style="height: 400px;background-color: white;">
+  <h3 class="w3-center"></h3>-->
+  <!--<p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<!--  <div class="w3-row-padding w3-center" style="background-color: white;">
+    <div class="w3-col m3">-->
+      <!--<img src="img1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">-->
+  
+
+
+  <!--<div class="w3-row-padding w3-center w3-section">-->
+  <!--  <div class="w3-col m3">-->
+      <!--<img src="img5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">-->
+  
+
+    <!--<div class="w3-col m3">-->
+     <!-- <img src="img6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">-->
+    
+
+   <!-- <div class="w3-col m3">-->
+     <!-- <img src="img7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">-->
+    
+
+   <!-- <div class="w3-col m3">-->
+   <!--   <img src="img8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">-->
+  
+    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<!--<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>-->
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+    <!-- <span class="w3-xxlarge w3-text-white w3-wide" style="margin-right: 130px; margin-bottom: 60px;"></span>
+<div class="caption">-->
+   <!-- <span class="border" style="background-color:transparent;font-size:40px;color: #f7f7f7; text-align: center;">SCROLL UP</span>-->
+   <div class="main-container">
+  <div class="first-container share">
+    <h1><span id="one">D</span><span>M</span><span>S</span></h1>
+  </div>
+ 
+</div>
+
+  </div>
+
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<!--<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>-->
+
+  <!--<div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+    <!--  <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>-->
+
+<div id="footer">
+    <div  class="footer"  >
+        <div class="container">
+            <a style="color:#D5D5D5;" href="/pages/about.html">About</a> | 
+            <a style="color:#D5D5D5" href="/pages/term.html">Terms</a> | 
+            <a  style="color:#D5D5D5;"href="/pages/privacy.html">Privacy Policy</a> | 
+            <a style="color:#D5D5D5;" href="/pages/licence.html">Licence information</a> | 
+            <a  style="color:#D5D5D5;"href="/pages/contact.html">Contact</a> | 
+            <spanstyle="color:#D5D5D5;"  >@copyright 2015 All-free-download.com</span>
+         </div>
+
+    </div>
+   </div> 
+
+ 
+<!-- Add Google Maps -->
+<!--<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script>"use strict";
+
+var resolver = {
+  resolve: function resolve(options, callback) {
+    // The string to resolve
+    var resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
+    var combinedOptions = Object.assign({}, options, { resolveString: resolveString });
+
+    function getRandomInteger(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    };
+
+    function randomCharacter(characters) {
+      return characters[getRandomInteger(0, characters.length - 1)];
+    };
+
+    function doRandomiserEffect(options, callback) {
+      var characters = options.characters;
+      var timeout = options.timeout;
+      var element = options.element;
+      var partialString = options.partialString;
+
+      var iterations = options.iterations;
+
+      setTimeout(function () {
+        if (iterations >= 0) {
+          var nextOptions = Object.assign({}, options, { iterations: iterations - 1 });
+
+          // Ensures partialString without the random character as the final state.
+          if (iterations === 0) {
+            element.textContent = partialString;
+          } else {
+            // Replaces the last character of partialString with a random character
+            element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
+          }
+
+          doRandomiserEffect(nextOptions, callback);
+        } else if (typeof callback === "function") {
+          callback();
+        }
+      }, options.timeout);
+    };
+
+    function doResolverEffect(options, callback) {
+      var resolveString = options.resolveString;
+      var characters = options.characters;
+      var offset = options.offset;
+      var partialString = resolveString.substring(0, offset);
+      var combinedOptions = Object.assign({}, options, { partialString: partialString });
+
+      doRandomiserEffect(combinedOptions, function () {
+        var nextOptions = Object.assign({}, options, { offset: offset + 1 });
+
+        if (offset <= resolveString.length) {
+          doResolverEffect(nextOptions, callback);
+        } else if (typeof callback === "function") {
+          callback();
+        }
+      });
+    };
+
+    doResolverEffect(combinedOptions, callback);
+  }
+};
+
+/* Some GLaDOS quotes from Portal 2 chapter 9: The Part Where He Kills You
+ * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
+ */
+var strings = ['INTERNAL MARKS'];
+
+var counter = 0;
+
+var options = {
+  // Initial position
+  offset: 0,
+  // Timeout between each random character
+  timeout: 5,
+  // Number of random characters to show
+  iterations: 10,
+  // Random characters to pick from
+  characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
+  // String to resolve
+  resolveString: strings[counter],
+  // The element
+  element: document.querySelector('[data-target-resolver]')
+};
+
+// Callback function when resolve completes
+function callback() {
+  setTimeout(function () {
+    counter++;
+
+    if (counter >= strings.length) {
+      counter = 0;
+    }
+
+    var nextOptions = Object.assign({}, options, { resolveString: strings[counter] });
+    resolver.resolve(nextOptions, callback);
+  }, 1000);
+}
+
+resolver.resolve(options, callback);</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+<script>$(document).on('ready', function () {
+    setTimeout(function () {
+        $('.letter').addClass('loaded');
+        $('.reg-text').addClass('loaded');
+    }, 1000);
+});
+</script>
+</body>
+</html>
